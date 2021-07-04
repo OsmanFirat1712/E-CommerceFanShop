@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Exercise</string>
+    <string name="eventAddedToShoppingCart">Zum Warenkorb hinzugefügt</string>
+    <string name="statusError">Leider ist etwas schiefgelaufen, Bitte probiere es etwas später erneut</string>
+    <string name="alertDelete">LÖSCHEN</string>
+</resources>

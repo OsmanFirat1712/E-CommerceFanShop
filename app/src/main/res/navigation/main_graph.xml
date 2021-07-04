@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/firstView">
+
+    <fragment
+        android:id="@+id/firstView"
+        android:name="com.example.exercise.ui.homescreen.HomeFragment"
+        android:label="First View"
+        tool:layout="@layout/home_screen"
+        app:popUpToInclusive="false">
+
+        <action
+            android:id="@+id/action_home_view_to_details"
+            app:destination="@+id/detailsView">
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/secondView"
+        android:name="com.example.exercise.ui.cardscreen.CartFragment"
+        tool:layout="@layout/card_view_fragment"
+        android:label="Second View">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailsView"
+        android:name="com.example.exercise.ui.detailscreen.DetailFragment"
+        tool:layout="@layout/detail_screen_fragment"
+        android:label="Details View">
+
+
+    </fragment>
+
+</navigation>
