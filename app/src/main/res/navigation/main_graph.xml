@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/firstView"
         android:name="com.example.exercise.ui.homescreen.HomeFragment"
-        android:label="First View"
+        android:label="Home"
         tool:layout="@layout/home_screen"
         app:popUpToInclusive="false">
 
@@ -22,7 +22,7 @@
         android:id="@+id/secondView"
         android:name="com.example.exercise.ui.cardscreen.CartFragment"
         tool:layout="@layout/card_view_fragment"
-        android:label="Second View">
+        android:label="Warenkorb">
 
     </fragment>
 
@@ -30,7 +30,7 @@
         android:id="@+id/detailsView"
         android:name="com.example.exercise.ui.detailscreen.DetailFragment"
         tool:layout="@layout/detail_screen_fragment"
-        android:label="Details View">
+        android:label="Detailansicht">
 
 
     </fragment>

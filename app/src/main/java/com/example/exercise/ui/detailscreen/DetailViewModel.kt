@@ -70,7 +70,6 @@ class DetailViewModel(private val context: Context) : ViewModel() {
     }
 
     fun addItemToShoppingCart(name: ShoppingCart) {
-
         try {
             viewModelScope.launch(Dispatchers.IO) {
                 Firebase.firestore.collection("ShoppingCart").add(name)
@@ -79,7 +78,6 @@ class DetailViewModel(private val context: Context) : ViewModel() {
                             Event.ShowMessage(context.getString(R.string.eventAddedToShoppingCart))
                 }
             }
-
 
         } catch (ie: Exception) {
             events.value = Event.ShowMessage(context.getString(R.string.statusError))

@@ -9,7 +9,7 @@
 
     <item
         android:id="@+id/secondView"
-        android:icon="@drawable/ic_search"
+        android:icon="@drawable/ic_baseline_shopping_cart_24"
         android:title="Warenkorb"
         app:showAsAction="ifRoom" />
 </menu>
